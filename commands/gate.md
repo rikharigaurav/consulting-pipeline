@@ -1,6 +1,6 @@
 ---
 description: Print the current gate's checklist, branches and the file it decides on
-argument-hint: [A, B, C or D]
+argument-hint: "[A, B, C or D]"
 ---
 
 Show me Gate **$ARGUMENTS** and hold me to it.

@@ -1,6 +1,6 @@
 ---
 description: Scaffold the pipeline folders and write the problem brief for a new project
-argument-hint: [one line describing the problem]
+argument-hint: "[one line describing the problem]"
 ---
 
 Set up a new run of the consult-to-build pipeline for: **$ARGUMENTS**

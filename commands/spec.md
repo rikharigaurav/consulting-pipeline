@@ -1,6 +1,6 @@
 ---
 description: Stages 6 to 7 — testable spec and UI design from the signed BRD
-argument-hint: [optional focus]
+argument-hint: "[optional focus]"
 ---
 
 The agents named here are this pipeline's: with the consult-to-build plugin they are `consult-to-build:<name>` (for example `consult-to-build:red-team`); installed by hand, just `<name>`.

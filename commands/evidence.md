@@ -1,6 +1,6 @@
 ---
 description: Stages 3 to 5 — gather evidence, hold the working session, draft and audit the BRD
-argument-hint: [optional focus]
+argument-hint: "[optional focus]"
 ---
 
 The agents named here are this pipeline's: with the consult-to-build plugin they are `consult-to-build:<name>` (for example `consult-to-build:red-team`); installed by hand, just `<name>`.

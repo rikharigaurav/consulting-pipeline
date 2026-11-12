@@ -1,6 +1,6 @@
 ---
 description: Run the full adversarial consulting panel on a question, in parallel, then synthesise where they disagree
-argument-hint: [the decision or question to put to the panel]
+argument-hint: "[the decision or question to put to the panel]"
 ---
 
 The agents named here are this pipeline's: with the consult-to-build plugin they are `consult-to-build:<name>` (for example `consult-to-build:red-team`); installed by hand, just `<name>`.

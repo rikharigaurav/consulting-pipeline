@@ -1,6 +1,6 @@
 ---
 description: Stage 10 — independent acceptance and security review
-argument-hint: [optional scope]
+argument-hint: "[optional scope]"
 ---
 
 The agents named here are this pipeline's: with the consult-to-build plugin they are `consult-to-build:<name>` (for example `consult-to-build:red-team`); installed by hand, just `<name>`.

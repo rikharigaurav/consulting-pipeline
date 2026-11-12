@@ -1,6 +1,6 @@
 ---
 description: Stages 8 to 9 — compile the build contract, resolve ambiguities, then build
-argument-hint: [optional module to start with]
+argument-hint: "[optional module to start with]"
 ---
 
 The agents named here are this pipeline's: with the consult-to-build plugin they are `consult-to-build:<name>` (for example `consult-to-build:red-team`); installed by hand, just `<name>`.
