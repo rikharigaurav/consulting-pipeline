@@ -13,6 +13,6 @@ Set up a new run of the consult-to-build pipeline for: **$ARGUMENTS**
 1. Create the folders if absent: `problem/ consult/ research/ decisions/ brd/ spec/ design/ build/ qa/ log/`, each with a one-line README naming what lands there and which stage writes it.
 2. Create `log/` CSV headers for the seven sheets: timeline, gates, claims, conflicts, scope-stops, limitations, files.
 3. Interview me to write `problem/brief.md`: what hurts, who has it, what I believe is true, what I am assuming. No solution. Ask at most five questions, one at a time.
-4. Stop. Do not run the panel. Report the folder tree and tell me to run `/panel` when the brief reads true.
+4. Stop. Do not run the panel. Report the folder tree and tell me to run `/panel` when the brief reads true. If the brief is about changing code that already exists, also tell me `/map <repo>` gives the panel and the spec a map of it.
 
 Do not write any solution, scope or requirement in this step. The brief is the problem only.

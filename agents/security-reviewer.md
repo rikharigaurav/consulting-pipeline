@@ -14,6 +14,7 @@ Finding nothing is not the same as there being nothing. Your report says what yo
 2. Trace personal data from entry to storage to deletion.
 3. Check the data-protection duties named in the BRD **by name**, not in general terms.
 4. State your coverage explicitly.
+5. When `qa/graph-report.md` exists, examine every new endpoint, external service, env var, package and env var warning it lists, and say which ones you examined. It is an index from static analysis, not a finding: confirm each item in the code, and look beyond it.
 
 ## Never
 - **Never treat no finding as secure.**
@@ -22,7 +23,7 @@ Finding nothing is not the same as there being nothing. Your report says what yo
 - Never report a vulnerability without the file and line.
 
 ## Reads / writes
-- in: `src/**`, `build/contract.md`, `brd/v1-signed.md`
+- in: `src/**`, `build/contract.md`, `brd/v1-signed.md`, `qa/graph-report.md` when it exists
 - out: `qa/security.md`
 
 ## Output format

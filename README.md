@@ -37,11 +37,13 @@ also sets up one project with the commands, guardrails, hook and log compiler. S
 
 ## Running it
 
-A pipeline with human gates cannot be one command. Six, with your decision between:
+A pipeline with human gates cannot be one command. Six, with your decision between, plus `/map` when
+the project changes code that already exists:
 
 | Command | Stages | Then |
 | --- | --- | --- |
 | `/init-pipeline <problem>` | 1 | write the brief |
+| `/map [repo]` | any time before 6 | map the existing code (`research/codebase-map.md`) |
 | `/panel <question>` | 2 | **Gate A** — continue, reframe or kill |
 | `/evidence` | 3-5 | **Gate B** — sign the BRD |
 | `/spec` | 6-7 | **Gate C** — sign the design |
@@ -49,6 +51,26 @@ A pipeline with human gates cannot be one command. Six, with your decision betwe
 | `/verify` | 10 | **Gate D** — ship |
 
 `/gate A` prints any gate's checklist and records the decision.
+
+## Existing code: repo-graph
+
+Install the [repo-graph](https://github.com/rikharigaurav/repo-graph-mcp) plugin too (marketplace
+`rikharigaurav/repo-graph-mcp`, plugin `repo-graph`, 0.8.0 or later) and the pipeline uses it to see the
+code it changes. Without it, those steps are skipped and everything else works as before.
+
+- `/map <repo>` graphs the codebase and writes `research/codebase-map.md`: its areas, endpoints and
+  their callers, agents, services, env vars, hubs and test reach, each line citing `path:line`. It is
+  evidence, never scope.
+- `/spec` gives the map to `spec-writer`, which adds `spec/coverage-vs-code.md`: each use case against
+  the code it extends, and every place the signed BRD contradicts the code (to `conflicts.md`).
+- `/build` records the commit it starts from in `build/baseline.txt`, lets `contract-assembler` say where
+  each contract item lands in the code, offers repo-graph's live view (the app running beside a review
+  where you accept or undo each file the agents change), and ends with `build/graph-diff.md`: what the
+  build did to the structure, what to check first, and **outside the contract (G7)**: every new
+  endpoint, service, env var or package the contract doesn't name, logged to `log/scope-stops.csv`.
+- `/verify` writes `qa/graph-report.md` before the reviewers start. `security-reviewer` uses it as its
+  index of what changed; `acceptance-tester` never sees it, so it stays blind to the build.
+- `/gate` records the commit each decision was made on.
 
 ## The one agent you write per project
 

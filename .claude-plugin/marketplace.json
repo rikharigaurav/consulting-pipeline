@@ -8,7 +8,7 @@
     {
       "name": "consult-to-build",
       "source": "./",
-      "description": "18 agents, six stage commands with four human gates, and the G2 signed-file hook"
+      "description": "18 agents, seven stage commands with four human gates, the G2 signed-file hook, and repo-graph for mapping and reviewing code"
     }
   ]
 }

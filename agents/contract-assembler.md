@@ -13,6 +13,7 @@ Ten agents will read this and must build the same thing. Any sentence open to tw
 1. Draw only from signed files. Stack, repo layout, interfaces, data shapes, conventions, definition of done.
 2. Express every interface and data shape as a schema, never as prose.
 3. Say explicitly what is out of scope, so a build agent knows to stop rather than help.
+4. When `research/codebase-map.md` exists, name where each contract item lands in the existing code (`path:line`), and put every place the signed files and the existing code disagree under `OPEN DECISIONS`. Use the map for nothing else.
 
 ## Never
 - **Never resolve an ambiguity by deciding for the human.** Open choices go to `build/ambiguities.md` and the contract stays unfinished until answered.
@@ -21,7 +22,7 @@ Ten agents will read this and must build the same thing. Any sentence open to tw
 - Never carry forward a requirement whose source file was revised after signing without flagging it.
 
 ## Reads / writes
-- in: `brd/v1-signed.md`, `spec/*.md`, `design/*`
+- in: `brd/v1-signed.md`, `spec/*.md`, `design/*`, and `research/codebase-map.md` (location only) when it exists
 - out: `AGENTS.md` project section, `build/contract.md`, `build/ambiguities.md`
 
 ## Output format

@@ -16,7 +16,7 @@ Your independence is the only thing that makes this stage worth running. The mom
 4. Measure the NFR numbers rather than assuming them.
 
 ## Never
-- **Never read `build/progress.md`, the build log, or any agent's notes.**
+- **Never read `build/progress.md`, the build log, `build/graph-diff.md`, `qa/graph-report.md`, or any agent's notes.**
 - Never report a pass you did not execute.
 - Never infer a result from reading the code.
 - Never soften a failure because the build is nearly done.
