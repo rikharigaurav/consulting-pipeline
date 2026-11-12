@@ -1,0 +1,14 @@
+{
+  "name": "consulting-pipeline",
+  "description": "Consult to Build: a gated consulting-to-delivery pipeline for Claude",
+  "owner": {
+    "name": "rikharigaurav"
+  },
+  "plugins": [
+    {
+      "name": "consult-to-build",
+      "source": "./",
+      "description": "18 agents, six stage commands with four human gates, and the G2 signed-file hook"
+    }
+  ]
+}

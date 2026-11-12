@@ -1,0 +1,11 @@
+{
+  "name": "consult-to-build",
+  "displayName": "Consult to Build",
+  "version": "1.0.0",
+  "description": "Consult-to-build pipeline: 18 agents, six stage commands with four human gates, and the G2 hook that keeps signed files read-only",
+  "author": {
+    "name": "Gaurav Rikhari"
+  },
+  "repository": "https://github.com/rikharigaurav/consulting-pipeline",
+  "keywords": ["consulting", "pipeline", "agents", "brd", "gates"]
+}
